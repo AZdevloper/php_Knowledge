@@ -7,7 +7,7 @@ import Result from "./Result/Result";
 
 function Content() {
     const { step, setStep, setActiveStep } = useContext(GlobalContext);
- 
+  
     
       if (step == STEP_GET_STARTED) {
         // setActiveStep(1);

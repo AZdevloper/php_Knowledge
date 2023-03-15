@@ -16,6 +16,7 @@ function App() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [step, setStep] = useState(STEP_GET_STARTED);
   const [numberOfCorrectAnswer, setNumberOfCorrectAnswer] = useState(0);
+  const [username, setUserName] = useState(null);
 
   
   const stepContext = {
@@ -25,16 +26,18 @@ function App() {
     setNumberOfCorrectAnswer,
     activeStep,
     setActiveStep,
+    username,
+    setUserName,
   };
 
   return (
     <GlobalContext.Provider value={stepContext}>
-      <div className="App  ">
+      <div className="App h-[100%] ">
         <Header />
         <div className="flex justify-center items-center flex-col p-5 w-[80%] mr-auto ml-auto">
-            <div className="w-[100%]">
+            
               <HorizontalLinearStepper />
-            </div>
+            
             <Content />
         </div>
 

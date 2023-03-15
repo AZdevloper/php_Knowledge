@@ -14,7 +14,7 @@ import {
 import { formatNumber } from "../../../Utils";
 
 function QuizQuestions() {
-  const { step, setStep, setNumberOfCorrectAnswer } = useContext(GlobalContext);
+  const { step, setStep, setNumberOfCorrectAnswer, setUserName } = useContext(GlobalContext);
   const [quizIndex, setQuizIndex] = useState(0);
   const [color, setColor] = useState("info");
   const countdownRef = useRef(null);
