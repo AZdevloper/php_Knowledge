@@ -32,13 +32,13 @@ function App() {
 
   return (
     <GlobalContext.Provider value={stepContext}>
-      <div className="App h-[100%] ">
+      <div className="App bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-[100%] ">
         <Header />
-        <div className="flex justify-center items-center flex-col p-5 w-[80%] mr-auto ml-auto">
-            
-              <HorizontalLinearStepper />
-            
+        <div className="  flex justify-center items-center flex-col p-5 w-[80%] mr-auto ml-auto">
+          <HorizontalLinearStepper />
+          <div className="">
             <Content />
+          </div>
         </div>
 
         <Footer />
